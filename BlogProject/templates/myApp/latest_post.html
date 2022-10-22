@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<ol>
+		{%for post in latest_post%}
+		<li><a href="{{post.get_absolute_url}}">{{post.title}}</a></li>
+		{%endfor%}
+	</ol>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+{%extends "myApp/parent.html"%}
+<body>
+	{%block content_block%}
+		<center>
+			<h1 style="color: red;"><u>Fill out the details</u></h1>
+			<form method="post">
+				{{post.as_p}}
+				{{form.as_p}}
+				{%csrf_token%}
+				<input type="submit" class="btn btn-primary" value="Send Mail">
+			</form>
+		</center>
+	{%endblock%}
+</body>
+</html>
